@@ -1,7 +1,6 @@
 
-import {RenderCondicional3} from './components/08-RenderCondicional3'
-import { ConsumirApi } from './components/09-ConsumoApis'
-import {HookEffect} from './components/10-hookEffect'
+import { EfectoCarga } from "./components/13-EfectoCarga"
+import { Formularios } from "./components/14-Formularios"
 
 function App() {
 
@@ -9,15 +8,19 @@ function App() {
     <>
 
     <div className="container">
-      <div className="row">
-        <div className="col-6">
-          <RenderCondicional3/>
-        </div>
-        <div className='col-6'>
-          <ConsumirApi/>
-        </div>
-        <HookEffect/>
-      </div>  
+
+    <div className="card mt-4 mb-4">
+      <div className="card-body">
+        <Formularios/>
+      </div>
+    </div>
+
+    <div className="card">
+      <div className="card-body">
+      < EfectoCarga />
+      </div>
+    </div>
+    
     </div>  
       
     </>
